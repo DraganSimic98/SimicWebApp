@@ -1,0 +1,632 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigacioni bar */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0px 50px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#nvBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#nvBar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#nvBar li a{
+text-decoration: none;
+color: black;
+font-size: 18px;
+font-weight: 600;
+transition: 0.3s ease;
+}
+
+#nvBar li a:hover,
+#nvBar li a.active{
+    color: red;
+}
+
+#nvBar li a.active::after,
+#nvBar li a:hover::after{
+    content: '';
+    width: 30%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#logo{
+    display: flex;
+    width: 7%;
+}
+
+/* Kontakt css */
+.wpb_map_wraper iframe {
+    width: 100%;
+}
+
+.forma{
+    display: flex;
+    padding: 0 50px;
+    width: 50%;
+}
+
+.forma p{
+    color: black;
+}
+
+.posaljite {
+  background: #e62143;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+  font-size: 1.15em;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 33.4929px;
+  padding: .8em 1em;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  text-shadow: rgba(0, 0, 0, .3) 1px 1px 1px;
+  text-underline-offset: 1px;
+  transition: all .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  word-break: break-word;
+  border: 0;
+}
+
+.posaljite:active,
+.posaljite:focus {
+  border-bottom-style: none;
+  border-color: #dadada;
+  box-shadow: rgba(0, 0, 0, .3) 0 3px 3px inset;
+  outline: 0;
+}
+
+.posaljite:hover {
+  border-bottom-style: none;
+  border-color: #dadada;
+}
+
+.wpb_map_wraper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+}
+
+.forma{
+display: flex;
+flex-direction: column;
+width: 50%;
+padding: 0px 20px;
+margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.error { 
+    color: red;
+}
+
+.kontakt{
+    display: flex;   
+    flex-direction: row;
+    color: white;
+    padding: 10px 50px;
+    background-color: rgba(0, 0, 0, 0.863);  
+    border-left: 3px solid red;
+    border-right: 3px solid red;
+    border-radius: 2rem;
+}
+
+.kontakt p {
+    margin-bottom: 0;
+}
+
+.komplet{
+    display: flex;
+    margin: 15px 0;
+    margin-top: -60px;
+    background-color: #fff;
+    border-radius: 2rem;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;     
+    width: 60%;
+}
+
+.h5{
+    position: relative;
+}
+
+.h5 h5::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+ }
+
+ /* footer */
+
+ .footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(36, 33, 33);
+    justify-content: space-between;
+}
+
+.footer-sekcija{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content:space-evenly;
+}
+
+.prava{
+    display: flex;
+    flex-direction: row;
+}
+/* centralni deo */
+ .linkovi{
+    display: flex; 
+    margin: 50px;   
+    flex-direction: column;  
+   
+    
+ }
+
+ .linkovi li{
+    list-style-type:none;
+   
+ }
+
+ .linkovi li a{
+    text-decoration: none;
+    color: #dadada;
+ }
+ 
+ .linkovi li a:hover{
+    color: red;
+ }
+ 
+
+ .linkovi h5{
+    color: white;
+    font-style:oblique;
+ }
+ /* leva strana */
+
+ .kontakti{
+    display: flex;    
+    flex-direction: column; 
+    margin: 50px;
+   
+  
+ }
+
+ .kontakti h5, h6, p{
+    color: #dadada;
+    margin-bottom: 0;
+ }
+ .kontakti h5{
+    margin-bottom: 0.5rem;
+    font-style: oblique;
+    color: white;
+ }
+ .kontakti h6{
+    margin-bottom: 0;
+    color: white;
+ }
+ .kontakti p{
+    margin-bottom: 0;
+ }
+ #adresa{
+    margin-bottom: 0.5rem;
+ }
+ #broj{
+    margin-bottom: 0.5rem;
+ }
+
+ /* desna strana */
+ .opis{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; 
+ }
+
+ 
+ .opis h5{ 
+    color: red;
+   font-style: oblique;
+   font-size: 30px;
+   font-weight: 600; 
+ }
+
+ .opis p{
+    text-align: center;  
+    justify-content: center;
+ }
+
+ /* donji deo futera */
+ .prava{
+    display: flex;
+    justify-content: center;  
+ }
+ .omotac{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .oNama{
+    color: red;
+ }
+
+
+ /* galerija */
+ body{
+    
+    margin: 0;
+    padding: 0;
+ }
+
+ .containter{
+    display: flex;
+    max-width: 1200px;
+    width: 100%; 
+    margin: 10px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+ }
+ #jedan,
+ #dva,
+ #tri,
+ #cetiri,
+ #pet,
+ #sest{
+    width:220px;
+    height: 220px;   
+    object-position: bottom;
+    padding: 5px;
+    
+ }
+
+ .popup:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    border: 1px solid red;
+    border-radius: 5% ;
+    transition: 0.5s;
+ }
+
+ #popup-img{
+    border: 5px solid goldenrod;
+    border-radius: 0%;
+ }
+
+ .modal-content{
+    margin-top: 30%;
+ }
+
+ .redGalerija{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;  
+    
+ }
+
+ .galerijaOpis{
+   border-left: 5px solid red;
+   margin-left: 200px;
+ }
+
+
+ .galerijaOpis p{
+    font-size: 24px;
+    color: red;
+    text-align: left;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 00px;
+    padding-right: 200px;
+    margin: 0;
+    margin-top: 50px;
+ }
+
+ .galerijaOpis h2{
+    font-size: 42px;
+    color: black;
+    line-height: 1.15;
+    text-align: left;
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 00px;
+    padding-right: 200px;
+    margin-bottom: 60px;
+ }
+
+ .tekst{
+    margin-bottom: 100px;
+ }
+
+ .tekst p{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 0;
+ }
+
+
+ /* O nama - pocetna stranica html */
+ 
+
+
+ .grupaLogo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between ;
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    
+  }
+ 
+ .saradnikLogo{  
+    height: 100px;
+    width: 180px;
+ }
+ .gkp{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   margin-bottom: 50px;
+   flex-wrap: wrap;
+   padding-left: 200px;
+   padding-right: 200px;
+   padding-top: 500px;
+   max-width: 100%;  
+   
+   
+ }
+
+ .unutar_kutije{
+   box-sizing: border-box;
+   padding-left: 0px;
+   padding-right: 0px;
+   width: 100%;
+   margin-top: 10px ;
+   background-color: white;
+   margin-left: 0px;
+ }
+ .imagebox{
+   display: flex;
+   position: relative;
+   border: none;
+   
+ }
+ .imagebox .box-header{
+   padding: 30px 30px 0 30px;
+   margin-top: 10px ;
+ }
+
+ .pvcVPR{
+   display: flex;
+   justify-content: space-between;  
+   align-items: center;
+   margin-top: 50px;
+   margin-bottom: 40px;
+   flex-wrap: wrap;
+   padding-left: 200px;
+   padding-right: 200px;
+ }
+
+ .unutar_kutijeVPR{
+   box-sizing: border-box;
+   padding-left: 15px;
+   padding-right: 15px;
+   width: 100%;
+   margin-top: 10px ;
+ }
+ .imageboxVPR{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   border: none;
+ }
+ .imagebox .box-headerVPR{
+   padding: 30px 30px 0 30px;
+   margin-top: 10px ;
+ }
+
+
+ .detaljnije {
+   width:347px ;
+   font-style: italic;
+   color:black;
+   border-style:solid;
+   
+}
+
+.detaljnije:hover{
+   color: red;
+}
+
+
+
+ .naslovONama p{
+   font-size: 24px;
+   color: red;
+   text-align: left;
+   font-weight: 400;
+   font-style: normal;
+   padding-left: 0px;
+   padding-right: 200px;
+   margin: 0;
+   margin-top: 50px; }
+ 
+   .naslovONama h2{
+   font-size: 42px;
+   color: black;
+   line-height: 1.15;
+   text-align: left;
+   font-weight: 700;
+   font-style: normal;
+   padding-left: 0px;
+   padding-right: 200px;
+   margin-bottom: 60px; }
+
+   .tekstONama p{
+      font-style:inherit;
+      font-weight: 400;
+      color: black;
+      font-size: 18px;
+      text-align: left;
+      padding-left: 200px;
+      padding-right: 200px;
+      overflow-wrap: break-word;
+   }
+
+   /* pvc stranica */
+
+   .pvcInfoNaslov p{
+      font-size: 24px;
+   color: red;
+   text-align: left;
+   font-weight: 400;
+   font-style: normal;
+   padding-left: 0px;
+   padding-right: 200px;
+   margin: 0;
+   margin-top: 50px;
+   }
+
+   .pvcInfoNaslov h2{
+      font-size: 42px;
+   color: black;
+   line-height: 1.15;
+   text-align: left;
+   font-weight: 700;
+   font-style: normal;
+   padding-left: 0px;
+   padding-right: 200px;
+   margin-bottom: 10px;
+   }
+   .pvcInfoTekst p{
+      font-style:inherit;
+      font-weight: 400;
+      color: black;
+      font-size: 18px;
+      text-align: left;
+      padding-left: 200px;
+      padding-right: 200px;
+      padding-top: 25px;
+      overflow-wrap: break-word;
+   }
+
+   .pvcInfoTekst ul{
+      font-style:inherit;
+      font-weight: 400;
+      color: black;
+      font-size: 18px;
+      text-align: left;
+      padding-left: 200px;
+      padding-right: 200px;
+      margin-bottom: 60px;
+   }
+   .pvcTekstOmotac{
+     margin-left: 200px;
+      border-left: 5px solid red;
+   }
+
+   .pvcVrata{     
+      padding-right: 200px;
+      padding-left: 200px;  
+      display: flex;
+
+      padding-bottom: 50px;
+   }
+
+   .pvcVrata p{
+      font-style:inherit;
+      font-weight: 400;
+      color: black;
+      font-size: 18px;
+      text-align: left;      
+      overflow-wrap: break-word;
+      padding-right: 100px;
+      padding-top: 50px;
+   }
+
+   .pvcVrata2Tekst{
+      display: flex;
+      padding-left: 50px;
+      flex-direction: column;
+   }
+
+   .listaIkonica{
+      justify-content: center;
+      align-items: center;
+   }
+
+   .listaIkonica li{
+      display: flex;
+      position: relative;
+      padding-top: 90px;
+      font-size: 18px;
+   }
+   
+   .listaIkonica li .ikonicePVC{
+      padding-right: 20px;
+      font-size: 25px;
+   }
+
+
+
+
+ 
+ 
+
+ 
+
+
+
+
+
+

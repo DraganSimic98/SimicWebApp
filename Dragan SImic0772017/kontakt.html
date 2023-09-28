@@ -1,0 +1,131 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        
+        <title>Simić Plast</title>
+    </head>
+    <body>
+        <header id="header" class>
+            <img id="logo" src="slike/simicPlast.png" alt="simicPlast">
+            <section id="nvBar">
+            <li><a href="pocetna.html">O NAMA</a></li>
+            <li><a href="pvcStolarija.html"> PVC STOLARIJA</a></li>
+            <li><a href="aluStolarija.html">ALU STOLARIJA</a></li>
+            <li><a href="galerija.html">GALERIJA</a></li>
+            <li><a class="active" href="kontakt.html">KONTAKT</a></li>
+            </section>
+            </header>
+
+            <div class="wpb_map_wraper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4059.613249328259!2d21.29123810180144!3d43.98873336931481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4756c42b00000001%3A0xe77de2087219c43b!2zU0lNScSG!5e0!3m2!1ssr!2srs!4v1670858018626!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>           
+                <div class="komplet">
+                    <form class="forma" id="formaId" method="POST" action="">
+                        <h2 style="text-align:center">Imate pitanje za nas?</h2>
+                        <p style="text-align:center" >Popunite formu i postavite pitanje koje zelite a mi cemo vam rado odgoovirti</p>
+
+                        <div class="form-group">               
+                        <input type="text" class="form-control" id="poljeIme" name="poljeIme" placeholder="Ime" onblur="checkValidationInput()" />
+                        </div>
+                        <br></br>
+                        <div class="form-group">                
+                        <input type="text" class="form-control" id="poljePrezime" name="poljePrezime" placeholder="Prezime" />
+                        </div>
+                        <br></br>
+                        <div class="form-group">
+                        <input type="text" class="form-control" id="poljeBrTelefona" name="poljeBrTelefona" placeholder="Broj telefona" />
+                        </div>
+                        <br></br>
+                        <div class="form-group">
+                        <input type="email" class="form-control" id="poljeEmail" name="poljeEmail" placeholder="E-mail" />
+                        </div>
+                        <br></br>
+                        <textarea  class="form-control" id="poljePoruka" name="poljePoruka" placeholder="Poruka"></textarea>
+                        <br></br>
+                        <button class="posaljite" id="btn" type="button" role="button" onclick="submitMail()">Pošaljite</button>
+                    </form>
+
+                    <div class = "kontakt">
+                        <div class="redKontakt">
+                            <br></br> 
+                            <div class="h5">                  
+                                <h5>KONTAKT</h5>
+                            </div>            
+                            <p>Naziv: SIMIĆ PLAST</p>
+                            <p>Mobilni telefon(1): +381(64)1409835</p>
+                            <p>Mobilni telefon(2): +381(64)2110685</p>
+                            <p>E-mail: simicplast@gmail.com</p>
+                            <br></br>
+                        
+                            <div class="h5">                  
+                                <h5>RADNO VREME</h5>
+                            </div> 
+                            <p>Ponedeljak-Petak: 08:00-16:00</p>
+                            <p>Subota: 08:00-14:00</p>
+                            <p>Nedeljom ne radimo</p>
+                            <br></br>
+                            <div class="h5">                  
+                                <h5>SIMIC PLAST S.Z.R</h5>
+                            </div> 
+                            <p>Ribarski put bb</p>
+                            <p>35000 Jagodina</p>
+                            <p>Republika Srbija</p>
+                            <br></br>
+                        
+                            <div class="h5">                  
+                                <h5>SIMIC PLAST SALON</h5>
+                            </div> 
+                            <p>Ribarski put bb</p>
+                            <p>35000 Jagodina</p>
+                            <p>Republika Srbija</p>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+
+        <footer id="footer" class ="footer">
+        <div class="footer-sekcija">
+                <div class="kontakti">
+                    <h5>Kontakti</h5>
+                    <h6>Adresa:</h6>
+                    <p id="adresa">Ribarski put bb, Jagodina</p>
+                    <h6>Telefon:</h6>
+                    <p>064-14-09-835</p>
+                    <p id="broj">064-21-10-685</p>
+                    <h6>E-mail:</h6>
+                    <p>simicplast@gmail.com</p>
+                </div>
+                
+                <div class="linkovi">
+                    <h5>Meni</h5>
+                    <li><a href="pocetna.html">O nama</a></li>                   
+                    <li><a href="pvcStolarija.html">PVC stolarija</a></li>
+                    <li><a href="aluStolarija.html">ALU stolarija</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                </div>         
+            </div>         
+            
+                <div class="omotac">
+                <div class="opis">
+                        <h5>Simić Plast</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt facilis possimus ab placeat natus incidunt? <br> Cupiditate iste vitae voluptates quod consequatur, blanditiis distinctio amet rem magnam facilis. Ipsa, placeat.</p>               
+                    </div>   
+
+                    <div class="prava">
+                        <p class="rights"><span>©  </span><span class="copyright-year">2022</span><span> </span><span>Company</span><span> - </span><span>All Rights Reserved.</span></p>
+                    </div>
+                </div>
+        </footer>
+
+            </body>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script src="javascript/javascript.js"></script>
+    </html>
